@@ -1,0 +1,47 @@
+.hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: var(--font-serif);
+}
+.title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-bottom: 32px;
+  color: var(--color-accent);
+}
+.descr {
+  font-size: 28px;
+  line-height: 1.1;
+  margin-bottom: 32px;
+}
+.button {
+  padding: 20px;
+  border: 2px solid var(--color-accent);
+  color: var(--color-surface);
+  background-color: var(--color-accent);
+  font-family: var(--font-sans);
+  border-radius: 20px;
+  font-size: 28px;
+  font-weight: 500;
+  transition:
+    color 200ms ease,
+    background-color 200ms ease;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--color-accent);
+  background-color: var(--color-surface);
+}
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  .title {
+    font-size: 52px;
+    max-width: 700px;
+    margin-bottom: 54px;
+  }
+}
