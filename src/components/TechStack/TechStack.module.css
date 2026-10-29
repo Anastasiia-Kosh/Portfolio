@@ -1,6 +1,14 @@
 .techStack {
   padding-block: 50px;
 }
+.eyebrow {
+  margin-bottom: 16px;
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
 .title {
   margin-bottom: 14px;
   font-family: var(--font-display);

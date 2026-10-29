@@ -1,0 +1,48 @@
+.aboutMe {
+  padding-block: 50px;
+}
+.eyebrow {
+  margin-bottom: 16px;
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+.title {
+  margin-bottom: 14px;
+  font-family: var(--font-display);
+  font-size: clamp(32px, 8vw, 42px);
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.035em;
+}
+
+.subtitle {
+  margin-bottom: 28px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  line-height: 1.7;
+}
+@media screen and (min-width: 768px) {
+  .title {
+    margin-bottom: 18px;
+    font-size: clamp(36px, 4vw, 42px);
+  }
+
+  .subtitle {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .title {
+    font-size: 46px;
+  }
+
+  .subtitle {
+    margin-bottom: 40px;
+    font-size: 17px;
+  }
+}

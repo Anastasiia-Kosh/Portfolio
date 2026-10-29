@@ -1,4 +1,3 @@
-
 import css from "./TechStack.module.css";
 import { useEffect, useRef, useState } from "react";
 
@@ -110,9 +109,7 @@ function TechGroup({ title, technologies, index }: TechGroupProps) {
       className={`${css.group} ${isVisible ? css.visible : ""}`}
     >
       <div className={css.heading}>
-        <span className={css.number}>
-          {String(index + 1).padStart(2, "0")}
-        </span>
+        <span className={css.number}>{String(index + 1).padStart(2, "0")}</span>
 
         <h3 className={css.groupTitle}>{title}</h3>
       </div>
@@ -130,10 +127,12 @@ export default function TechStack() {
   return (
     <section className={css.techStack} id="tech-stack">
       <div className="container">
-        <h2 className={css.title}>Tech Stack</h2>
+        <p className={css.eyebrow}>ТЕХНОЛОГІЇ</p>
+        <h2 className={css.title}>Технологічний стек</h2>
 
         <p className={css.subtitle}>
-          Technologies I use to build web applications.
+          
+Технології, які я використовую для створення вебзастосунків.
         </p>
 
         <div className={css.groups}>

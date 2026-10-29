@@ -2,7 +2,7 @@ import css from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={css.hero} id="about">
+    <section className={css.hero}>
       <div className="container">
         <div className={css.heroContent}>
           <div className={css.heroText}>

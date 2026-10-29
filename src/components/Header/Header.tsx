@@ -43,6 +43,9 @@ export default function Header() {
                 <a href="#projects">Проєкти</a>
               </li>
               <li className={css.navLink}>
+                <a href="#tech-stack">Технології</a>
+              </li>
+              <li className={css.navLink}>
                 <a href="#about">Про мене</a>
               </li>
               <li className={css.navLink}>
@@ -65,6 +68,11 @@ export default function Header() {
                   <li className={css.navLink}>
                     <a href="#projects" onClick={handleCloseMobileMenu}>
                       Проєкти
+                    </a>
+                  </li>
+                  <li className={css.navLink}>
+                    <a href="#tech-stack" onClick={handleCloseMobileMenu}>
+                      Технології
                     </a>
                   </li>
                   <li className={css.navLink}>

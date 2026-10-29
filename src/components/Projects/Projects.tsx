@@ -7,7 +7,7 @@ export default function Projects() {
     <section className={css.projects} id="projects">
       <div className="container">
         <div className={css.intro}>
-          <p className={css.eyebrow}>MY WORK</p>
+          <p className={css.eyebrow}>Мої роботи</p>
           <h2 className={css.title}>Проєкти</h2>
           <p className={css.description}>
             Від ідеї до реалізації — проєкти, у яких я поєдную інтерфейс, логіку

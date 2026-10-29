@@ -1,3 +1,4 @@
+import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
@@ -9,7 +10,8 @@ export default function App() {
       <Header />
       <Hero />
       <Projects />
-      <TechStack/>
+      <TechStack />
+      <About />
     </>
   );
 }
