@@ -1,0 +1,52 @@
+.projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.intro {
+  max-width: 650px;
+  margin-bottom: 64px;
+}
+
+.eyebrow {
+  margin-bottom: 16px;
+  color: var(--color-accent);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-family: var(--font-display);
+  font-size: clamp(36px, 5vw, 56px);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  max-width: 540px;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  line-height: 1.7;
+}
+.projectList {
+  display: flex;
+  flex-direction: column;
+}
+
+.projectList > * + * {
+  border-top: 1px solid rgb(255 255 255 / 8%);
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    margin-bottom: 80px;
+  }
+
+  .description {
+    font-size: 18px;
+  }
+}

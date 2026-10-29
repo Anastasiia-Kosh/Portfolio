@@ -1,0 +1,97 @@
+.swiperWrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 10%);
+  border-radius: 16px;
+  background: #10111a;
+  box-shadow:
+    0 0 30px rgb(124 92 255 / 8%),
+    0 20px 60px rgb(0 0 0 / 25%);
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 7 / 4;
+  object-fit: cover;
+}
+
+/* Стрілки навігації */
+.swiperWrapper :global(.swiper-button-prev),
+.swiperWrapper :global(.swiper-button-next) {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 50%;
+  background: rgb(12 13 24 / 75%);
+  color: #fff;
+  backdrop-filter: blur(8px);
+  transition:
+    background-color 250ms ease,
+    border-color 250ms ease;
+}
+
+.swiperWrapper :global(.swiper-button-prev)::after,
+.swiperWrapper :global(.swiper-button-next)::after {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.swiperWrapper :global(.swiper-button-prev):hover,
+.swiperWrapper :global(.swiper-button-next):hover {
+  border-color: var(--color-accent);
+  background: rgb(124 92 255 / 85%);
+}
+
+/* Індикатори */
+.swiperWrapper :global(.swiper-pagination) {
+  bottom: 12px !important;
+}
+
+.swiperWrapper :global(.swiper-pagination-bullet) {
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  opacity: 0.5;
+  transition:
+    width 250ms ease,
+    opacity 250ms ease;
+}
+
+.swiperWrapper :global(.swiper-pagination-bullet-active) {
+  width: 20px;
+  border-radius: 5px;
+  background: var(--color-accent);
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .swiperWrapper {
+    border-radius: 12px;
+  }
+
+  .swiperWrapper :global(.swiper-button-prev),
+  .swiperWrapper :global(.swiper-button-next) {
+    width: 30px;
+    height: 30px;
+  }
+
+  .swiperWrapper :global(.swiper-button-prev)::after,
+  .swiperWrapper :global(.swiper-button-next)::after {
+    font-size: 11px;
+  }
+
+  .swiperWrapper :global(.swiper-pagination) {
+    bottom: 8px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .swiperWrapper :global(.swiper-button-prev),
+  .swiperWrapper :global(.swiper-button-next),
+  .swiperWrapper :global(.swiper-pagination-bullet) {
+    transition: none;
+  }
+}
