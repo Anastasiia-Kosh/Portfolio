@@ -1,11 +1,24 @@
 :root {
-  --color-bg: #f8f4ee;
-  --color-surface: #fcf9f5;
-  --color-accent: #800020;
-  --color-text-secondary: #594a43;
-  --color-text: #302622;
-  --font-sans: "Inter Tight", sans-serif;
-  --font-serif: "Playfair Display", serif;
+  color-scheme: dark;
+
+  /* Основні кольори */
+  --color-bg: #080812;
+  --color-surface: #10101e;
+  --color-text: #f5f3ff;
+  --color-text-secondary: #b8b7cc;
+
+  /* Акценти */
+  --color-accent: #a78bfa;
+  --color-accent-warm: #ff9a6c;
+  --color-glow-violet: #8b5cf6;
+  --color-glow-blue: #38bdf8;
+
+  /* Межі та розділювачі */
+  --color-border: rgba(190, 176, 255, 0.18);
+
+  /* Шрифти */
+  --font-sans: "Manrope", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
 }
 
 *,
@@ -79,7 +92,12 @@ button {
 }
 body {
   font-family: var(--font-sans);
-  background-color: var(--color-bg);
+  background:
+    radial-gradient(ellipse at 70% 20%, rgb(91 33 182 / 42%), transparent 45%),
+    radial-gradient(ellipse at 90% 70%, rgb(14 165 233 / 38%), transparent 40%),
+    radial-gradient(ellipse at 50% 70%, rgb(238 58 8 / 23%), transparent 45%),
+    var(--color-bg);
+
   color: var(--color-text);
   padding: 0;
   margin: 0;

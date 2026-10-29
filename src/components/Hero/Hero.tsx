@@ -4,15 +4,31 @@ export default function Hero() {
   return (
     <section className={css.hero} id="about">
       <div className="container">
-        <h1 className={css.title}>
-          Будую вебзастосунки від інтерфейсу до сервера
-        </h1>
-        <p className={css.descr}>
-          Fullstack-розробниця із практичним досвідом роботи з HTML, JavaScript, React, Next.js і Node.js.  <br/>Шукаю
-          можливість працювати над реальними проєктами та професійно розвиватися
-          в IT-команді.
-        </p>
-        <button className={css.button}>Завантажити резюме</button>
+        <div className={css.heroContent}>
+          <div className={css.heroText}>
+            <h1 className={css.title}>Від ідеї - до працюючого продукту.</h1>
+
+            <p className={css.stack}>
+              Fullstack Developer · React · Next.js · Node.js
+            </p>
+
+            <p className={css.descr}>
+              Люблю розбиратися, як усе працює: від інтерфейсу, який бачить
+              користувач, до логіки та даних на сервері. Створюю вебзастосунки,
+              у яких дизайн і функціональність працюють разом.
+            </p>
+
+            <button className={css.button}>Завантажити резюме</button>
+          </div>
+
+          <div className={css.heroVisual} aria-hidden="true">
+            <img
+              className={css.heroImage}
+              src="/images/hero-orb8.png"
+              alt="orbita"
+            />
+          </div>
+        </div>
       </div>
     </section>
   );

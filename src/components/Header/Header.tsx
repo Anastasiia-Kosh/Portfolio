@@ -61,27 +61,42 @@ export default function Header() {
           {isMobileMenuOpen && (
             <div className={css.mobileMenu}>
               <nav className={css.mobileNav}>
-            <ul className={css.mobileNavigation}>
-              <li className={css.navLink}>
-                <a href="#projects" onClick={handleCloseMobileMenu}>Проєкти</a>
-              </li>
-              <li className={css.navLink} >
-                <a href="#about" onClick={handleCloseMobileMenu}>Про мене</a>
-              </li>
-              <li className={css.navLink}>
-                <a href="#contacts" onClick={handleCloseMobileMenu}>Контакти</a>
-              </li>
-            </ul>
-          </nav>
-          <div className={css.mobileButtonsMenu}>
-            <button type="button" className={css.buttonLang} onClick={handleCloseMobileMenu}>
-              EN/UA
-            </button>
-            <button type="button" className={css.buttonTheme} onClick={handleCloseMobileMenu}>
-              Dark/Light
-            </button>
-          </div>
-          </div>)}
+                <ul className={css.mobileNavigation}>
+                  <li className={css.navLink}>
+                    <a href="#projects" onClick={handleCloseMobileMenu}>
+                      Проєкти
+                    </a>
+                  </li>
+                  <li className={css.navLink}>
+                    <a href="#about" onClick={handleCloseMobileMenu}>
+                      Про мене
+                    </a>
+                  </li>
+                  <li className={css.navLink}>
+                    <a href="#contacts" onClick={handleCloseMobileMenu}>
+                      Контакти
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div className={css.mobileButtonsMenu}>
+                <button
+                  type="button"
+                  className={css.buttonLang}
+                  onClick={handleCloseMobileMenu}
+                >
+                  EN/UA
+                </button>
+                <button
+                  type="button"
+                  className={css.buttonTheme}
+                  onClick={handleCloseMobileMenu}
+                >
+                  Dark/Light
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </header>
