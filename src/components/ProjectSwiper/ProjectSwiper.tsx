@@ -31,6 +31,7 @@ export default function ProjectSwiper({
         loop={screenshots.length > 1}
         slidesPerView={1}
         spaceBetween={0}
+        initialSlide={0}
       >
         {screenshots.map((src, index) => (
           <SwiperSlide key={src}>
