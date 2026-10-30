@@ -37,20 +37,10 @@
   gap: 16px;
   padding-block: 24px;
   border-bottom: 1px solid var(--color-border, rgba(255, 255, 255, 0.12));
-  opacity: 0;
-  transform: translateY(32px);
-  transition:
-    opacity 700ms ease,
-    transform 700ms ease;
 }
 
 .group:first-child {
   border-top: 1px solid var(--color-border, rgba(255, 255, 255, 0.12));
-}
-
-.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 .heading {
@@ -159,12 +149,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .group {
-    opacity: 1;
-    transform: none;
-    transition: none;
-  }
-
   .technologies li {
     transition: none;
   }

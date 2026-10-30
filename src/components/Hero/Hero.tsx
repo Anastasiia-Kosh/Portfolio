@@ -25,7 +25,7 @@ export default function Hero() {
             <img
               className={css.heroImage}
               src="/images/hero-orb8.png"
-              alt="orbita"
+              alt=""
             />
           </div>
         </div>

@@ -1,7 +1,9 @@
+import Reveal from "../Reveal/Reveal";
 import css from "./About.module.css";
 
 export default function About() {
   return (
+      <Reveal>
     <section className={css.aboutMe} id="about">
       <div className="container">
         <p className={css.eyebrow}>ТРОХИ ПРО МЕНЕ</p>
@@ -27,6 +29,7 @@ export default function About() {
           — від інтерфейсу користувача до серверної логіки.
         </p>
       </div>
-    </section>
+      </section>
+      </Reveal>
   );
 }

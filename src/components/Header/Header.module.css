@@ -5,8 +5,9 @@
   z-index: 800;
   background-color: var(--color-surface);
   color: var(--color-text-secondary);
-  border-bottom: 1px solid var(--color-accent);
+  border-bottom: 1px solid rgb(255 255 255 / 20%);
 }
+
 .headerInner {
   display: flex;
   align-items: center;
@@ -33,7 +34,7 @@
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--color-text);
+  color: var(--color-accent);
   font-size: 26px;
 }
 .mobileMenu {

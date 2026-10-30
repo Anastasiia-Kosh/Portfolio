@@ -44,5 +44,6 @@
   .subtitle {
     margin-bottom: 40px;
     font-size: 17px;
+    max-width: 900px;
   }
 }

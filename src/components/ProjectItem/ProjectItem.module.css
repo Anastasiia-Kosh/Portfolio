@@ -4,15 +4,6 @@
   align-items: center;
   gap: 28px;
   padding-block: 36px;
-  opacity: 0;
-  transform: translateY(32px);
-  transition:
-    opacity 700ms ease,
-    transform 700ms ease;
-}
-.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 .content {
   display: flex;
@@ -153,11 +144,6 @@
 
 @media (prefers-reduced-motion: reduce) {
   .links a {
-    transition: none;
-  }
-  .project {
-    opacity: 1;
-    transform: none;
     transition: none;
   }
 }
