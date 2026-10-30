@@ -2,7 +2,7 @@ import css from "./Hero.module.css";
 
 export default function Hero() {
   return (
-    <section className={css.hero}>
+    <section className={css.hero} id="hero">
       <div className="container">
         <div className={css.heroContent}>
           <div className={css.heroText}>
@@ -18,13 +18,18 @@ export default function Hero() {
               у яких дизайн і функціональність працюють разом.
             </p>
 
-            <button className={css.button}>Завантажити резюме</button>
+                
+            <a className={css.button} href="/cv/Koshutska Anastasiia Fullstack_resume_en.pdf"
+  download="Koshutska Anastasiia Fullstack_resume_en.pdf"> <svg className={css.icon}>
+                  <use href="/icons/sprite.svg#icon-download" />
+                </svg>Завантажити резюме</a>
+
           </div>
 
           <div className={css.heroVisual} aria-hidden="true">
             <img
               className={css.heroImage}
-              src="/images/hero-orb8.png"
+              src="/images/hero/hero-orb8.png"
               alt=""
             />
           </div>

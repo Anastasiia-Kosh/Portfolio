@@ -1,4 +1,5 @@
 import About from "./components/About/About";
+import Contacts from "./components/Contact/Contact";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
@@ -12,6 +13,7 @@ export default function App() {
       <Projects />
       <TechStack />
       <About />
+      <Contacts />
     </>
   );
 }

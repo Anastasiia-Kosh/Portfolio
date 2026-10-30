@@ -14,7 +14,7 @@ export default function Header() {
     <header className={css.header}>
       <div className="container">
         <div className={css.headerInner}>
-          <a href="/" className={css.name}>Анастасія Кошуцька</a>
+          <a href="#hero" className={css.name}>Анастасія Кошуцька</a>
           <button
             type="button"
             onClick={handleMobileMenu}

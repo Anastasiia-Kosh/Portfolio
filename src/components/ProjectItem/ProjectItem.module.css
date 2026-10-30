@@ -24,7 +24,7 @@
 .title {
   margin-bottom: 14px;
   font-family: var(--font-display);
-  font-size: clamp(28px, 8vw, 36px);
+  font-size: clamp(28px, 5vw, 36px);
   font-weight: 600;
   line-height: 1.15;
   letter-spacing: -0.035em;
@@ -34,7 +34,7 @@
   max-width: 440px;
   margin-bottom: 20px;
   color: var(--color-text-secondary);
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.7;
 }
 
@@ -101,12 +101,10 @@
 
   .title {
     margin-bottom: 18px;
-    font-size: clamp(28px, 3.5vw, 36px);
   }
 
   .description {
     margin-bottom: 22px;
-    font-size: 14px;
     line-height: 1.8;
   }
 
@@ -128,7 +126,6 @@
 
   .title {
     margin-bottom: 20px;
-    font-size: clamp(32px, 3vw, 42px);
   }
 
   .description {
