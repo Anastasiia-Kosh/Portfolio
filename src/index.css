@@ -20,7 +20,22 @@
   --font-sans: "Manrope", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
 }
+[data-theme="light"] {
+  /* Основні кольори */
+  --color-bg: #f7f6fc;
+  --color-surface: #eeecf6;
+  --color-text: #29243a;
+  --color-text-secondary: #706b82;
 
+  /* Акценти */
+  --color-accent: #8063c9;
+  --color-accent-warm: #d98260;
+  --color-glow-violet: #8b5cf6;
+  --color-glow-blue: #38bdf8;
+
+  /* Додаткові поверхні */
+  --color-header-footer: #eae7f2;
+}
 *,
 *::before,
 *::after {

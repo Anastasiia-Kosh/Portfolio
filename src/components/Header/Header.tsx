@@ -2,6 +2,7 @@ import { useState } from "react";
 import css from "./Header.module.css";
 import LanguageSwitcher from "../Switcher/LanguageSwitcher";
 import { useLanguageContext } from "../../hooks/useLanguage";
+import ThemeSwitcher from "../Switcher/ThemeSwitcher";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -21,6 +22,7 @@ export default function Header() {
           </a>
           <div className={css.mobileButtonsMenu}>
             <LanguageSwitcher />
+            <ThemeSwitcher />
           </div>
           <button
             type="button"
@@ -64,9 +66,7 @@ export default function Header() {
           </nav>
           <div className={css.buttonsMenu}>
             <LanguageSwitcher />
-            <button type="button" className={css.buttonTheme}>
-              Dark/Light
-            </button>
+            <ThemeSwitcher />
           </div>
           {isMobileMenuOpen && (
             <div className={css.mobileMenu}>

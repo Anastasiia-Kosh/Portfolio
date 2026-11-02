@@ -15,7 +15,7 @@ export default function LanguageSwitcher() {
         UA
       </button>
 
-      <span>/</span>
+      <span>·</span>
 
       <button
         onClick={() => setLanguage("en")}
