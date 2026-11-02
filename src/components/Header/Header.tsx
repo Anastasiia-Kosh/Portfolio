@@ -20,10 +20,6 @@ export default function Header() {
           <a href="#hero" className={css.name}>
             {t.header.name}
           </a>
-          <div className={css.mobileButtonsMenu}>
-            <LanguageSwitcher />
-            <ThemeSwitcher />
-          </div>
           <button
             type="button"
             onClick={handleMobileMenu}
@@ -70,6 +66,10 @@ export default function Header() {
           </div>
           {isMobileMenuOpen && (
             <div className={css.mobileMenu}>
+              <div className={css.mobileButtonsMenu}>
+            <LanguageSwitcher />
+            <ThemeSwitcher />
+          </div>
               <nav className={css.mobileNav}>
                 <ul className={css.mobileNavigation}>
                   <li className={css.navLink}>
@@ -94,6 +94,7 @@ export default function Header() {
                   </li>
                 </ul>
               </nav>
+                        
             </div>
           )}
         </div>

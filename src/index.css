@@ -1,22 +1,19 @@
 :root {
   color-scheme: dark;
 
-  /* Основні кольори */
   --color-bg: #080812;
   --color-surface: #10101e;
   --color-text: #f5f3ff;
   --color-text-secondary: #b8b7cc;
   --color-header-footer: #10101e;
-  /* Акценти */
+
   --color-accent: #a78bfa;
   --color-accent-warm: #ff9a6c;
   --color-glow-violet: #8b5cf6;
   --color-glow-blue: #38bdf8;
 
-  /* Межі та розділювачі */
-  --color-border: rgba(190, 176, 255, 0.18);
+  --color-border: rgba(190, 176, 255, 20%);
 
-  /* Шрифти */
   --font-sans: "Manrope", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
 }
@@ -93,7 +90,7 @@ button {
 body {
   font-family: var(--font-sans);
   background:
-    radial-gradient(ellipse at 20% 90%, rgb(14 165 233 / 20%), transparent 50%),
+    radial-gradient(ellipse at 20% 75%, rgb(14 165 233 / 20%), transparent 50%),
     radial-gradient(ellipse at 80% 35%, rgb(91 33 182 / 35%), transparent 50%),
     var(--color-bg);
   color: var(--color-text);
@@ -131,30 +128,29 @@ main {
 /* Styles for LightTheme */
 [data-theme="light"] {
   color-scheme: light;
-  /* Основні кольори */
+
   --color-bg: #fad5c48b;
   --color-surface: #eae6de;
   --color-text: #292b35;
   --color-text-secondary: #716e70;
-  --color-header-footer: #fae7de;
-  /* Акценти */
+  --color-header-footer: rgb(208 190 222);
+
   --color-accent: #7560ad;
   --color-accent-warm: #c77c5c;
   --color-glow-violet: #8b73c5;
   --color-glow-blue: #6b9eb5;
 
-  /* Межі та розділювачі */
   --color-border: rgba(89, 79, 105, 0.2);
 
   body {
     background:
       radial-gradient(
-        ellipse at 10% 85%,
-        rgb(199, 124, 92, 80%),
-        /* rgba(90, 175, 214, 45%), */ transparent 50%
+        ellipse at 80% 35%,
+        rgba(144, 108, 227, 45%),
+        transparent 50%
       ),
       radial-gradient(
-        ellipse at 80% 35%,
+        ellipse at 20% 75%,
         rgba(144, 108, 227, 45%),
         transparent 50%
       ),

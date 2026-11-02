@@ -8,7 +8,16 @@
   min-height: 760px;
   position: relative;
 }
-
+[data-theme="light"] {
+  .hero {
+    background-image:
+      linear-gradient(rgba(242 151 41/ 0.2)),
+      url("/images/hero/hero-mobile.webp");
+  }
+  .heroImage {
+    filter: sepia(0.5) saturate(1.4) hue-rotate(14deg) brightness(1.15);
+  }
+}
 .heroContent {
   display: grid;
   grid-template-columns: 1fr;
@@ -107,6 +116,13 @@
     min-height: 680px;
     background-image: url("/images/hero/hero-tablet.webp");
   }
+  [data-theme="light"] {
+    .hero {
+      background-image:
+        linear-gradient(rgba(242 151 41/ 0.2)),
+        url("/images/hero/hero-tablet.webp");
+    }
+  }
   .heroContent {
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -143,9 +159,6 @@
       background-image:
         linear-gradient(rgba(242 151 41/ 0.2)),
         url("/images/hero/hero-desktop.webp");
-    }
-    .heroImage {
-      filter: sepia(0.5) saturate(1.4) hue-rotate(14deg) brightness(1.15);
     }
   }
 }
