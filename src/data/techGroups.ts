@@ -1,5 +1,6 @@
 export const techGroups = [
   {
+    id: "frontend" as const,
     title: "Frontend",
     technologies: [
       "HTML5",
@@ -13,6 +14,7 @@ export const techGroups = [
     ],
   },
   {
+    id: "stateManagement" as const,
     title: "State Management & Data Fetching",
     technologies: [
       "Redux Toolkit",
@@ -23,6 +25,7 @@ export const techGroups = [
     ],
   },
   {
+    id: "forms" as const,
     title: "Forms & UI Libraries",
     technologies: [
       "React Hook Form",
@@ -35,6 +38,7 @@ export const techGroups = [
     ],
   },
   {
+    id: "backend" as const,
     title: "Backend",
     technologies: [
       "Node.js",
@@ -50,10 +54,12 @@ export const techGroups = [
     ],
   },
   {
+    id: "databases" as const,
     title: "Databases & Services",
     technologies: ["MongoDB", "Cloudinary"],
   },
   {
+    id: "tools" as const,
     title: "Tools & Deployment",
     technologies: [
       "Git",
@@ -66,4 +72,4 @@ export const techGroups = [
       "Trello",
     ],
   },
-];
+] ;

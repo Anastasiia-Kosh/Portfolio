@@ -1,0 +1,15 @@
+.languageSwitcher {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.buttonLang {
+  text-transform: uppercase;
+  padding: 10px 4px;
+  color: var(--color-text-secondary);
+  transition: color 300ms ease;
+}
+
+.activeLang {
+  color: var(--color-accent);
+}

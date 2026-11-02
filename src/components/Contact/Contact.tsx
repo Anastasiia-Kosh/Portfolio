@@ -1,17 +1,16 @@
 import css from "./Contacts.module.css";
 import Reveal from "../Reveal/Reveal";
+import { useLanguageContext } from "../../hooks/useLanguage";
 
 export default function Contacts() {
+  const { t } = useLanguageContext();
   return (
     <section className={css.contacts} id="contacts">
       <div className="container">
         <Reveal>
-          <p className={css.eyebrow}>ЗВ'ЯЖІМОСЯ</p>
-          <h2 className={css.title}>Будемо на зв'язку!</h2>
-          <p className={css.subtitle}>
-            Відкрита до нових можливостей, цікавих проєктів та професійного
-            спілкування.
-          </p>
+          <p className={css.eyebrow}>{t.contacts.eyebrow}</p>
+          <h2 className={css.title}>{t.contacts.title}</h2>
+          <p className={css.subtitle}>{t.contacts.subtitle}</p>
 
           <div className={css.contactList}>
             <a

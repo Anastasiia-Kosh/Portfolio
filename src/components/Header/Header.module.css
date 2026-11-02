@@ -57,14 +57,18 @@
   align-items: center;
 }
 
-.mobileNavigation,
-.mobileButtonsMenu {
+.mobileNavigation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.buttonTheme,
-.buttonLang,
+
+.mobileButtonsMenu {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .navLink {
   padding: 10px 4px;
   color: var(--color-text-secondary);
@@ -72,17 +76,15 @@
     color 300ms ease,
     transform 300ms ease-out;
 }
-.buttonTheme:hover,
-.buttonTheme:focus,
-.buttonLang:hover,
-.buttonLang:focus,
+
 .navLink:hover,
 .navLink:focus {
   color: var(--color-accent);
   transform: scale(1.05) translateY(-3px);
 }
 @media screen and (min-width: 1440px) {
-  .menuButton {
+  .menuButton,
+  .mobileButtonsMenu {
     display: none;
   }
 

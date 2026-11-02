@@ -1,6 +1,7 @@
-"use client";
 import { useState } from "react";
 import css from "./Header.module.css";
+import LanguageSwitcher from "../Switcher/LanguageSwitcher";
+import { useLanguageContext } from "../../hooks/useLanguage";
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -10,15 +11,23 @@ export default function Header() {
   const handleCloseMobileMenu = () => {
     setIsMobileMenuOpen(false);
   };
+  const { t } = useLanguageContext();
   return (
     <header className={css.header}>
       <div className="container">
         <div className={css.headerInner}>
-          <a href="#hero" className={css.name}>Анастасія Кошуцька</a>
+          <a href="#hero" className={css.name}>
+            {t.header.name}
+          </a>
+          <div className={css.mobileButtonsMenu}>
+            <LanguageSwitcher />
+          </div>
           <button
             type="button"
             onClick={handleMobileMenu}
-            aria-label={isMobileMenuOpen ? "Закрити меню" : "Відкрити меню"}
+            aria-label={
+              isMobileMenuOpen ? t.header.closeMenu : t.header.openMenu
+            }
             className={css.menuButton}
             aria-expanded={isMobileMenuOpen}
           >
@@ -40,23 +49,21 @@ export default function Header() {
           <nav className={css.navigation}>
             <ul className={css.navigationList}>
               <li className={css.navLink}>
-                <a href="#projects">Проєкти</a>
+                <a href="#projects">{t.header.projects}</a>
               </li>
               <li className={css.navLink}>
-                <a href="#tech-stack">Технології</a>
+                <a href="#tech-stack">{t.header.technologies}</a>
               </li>
               <li className={css.navLink}>
-                <a href="#about">Про мене</a>
+                <a href="#about">{t.header.about}</a>
               </li>
               <li className={css.navLink}>
-                <a href="#contacts">Контакти</a>
+                <a href="#contacts">{t.header.contacts}</a>
               </li>
             </ul>
           </nav>
           <div className={css.buttonsMenu}>
-            <button type="button" className={css.buttonLang}>
-              EN/UA
-            </button>
+            <LanguageSwitcher />
             <button type="button" className={css.buttonTheme}>
               Dark/Light
             </button>
@@ -67,42 +74,26 @@ export default function Header() {
                 <ul className={css.mobileNavigation}>
                   <li className={css.navLink}>
                     <a href="#projects" onClick={handleCloseMobileMenu}>
-                      Проєкти
+                      {t.header.projects}
                     </a>
                   </li>
                   <li className={css.navLink}>
                     <a href="#tech-stack" onClick={handleCloseMobileMenu}>
-                      Технології
+                      {t.header.technologies}
                     </a>
                   </li>
                   <li className={css.navLink}>
                     <a href="#about" onClick={handleCloseMobileMenu}>
-                      Про мене
+                      {t.header.about}
                     </a>
                   </li>
                   <li className={css.navLink}>
                     <a href="#contacts" onClick={handleCloseMobileMenu}>
-                      Контакти
+                      {t.header.contacts}
                     </a>
                   </li>
                 </ul>
               </nav>
-              <div className={css.mobileButtonsMenu}>
-                <button
-                  type="button"
-                  className={css.buttonLang}
-                  onClick={handleCloseMobileMenu}
-                >
-                  EN/UA
-                </button>
-                <button
-                  type="button"
-                  className={css.buttonTheme}
-                  onClick={handleCloseMobileMenu}
-                >
-                  Dark/Light
-                </button>
-              </div>
             </div>
           )}
         </div>

@@ -38,7 +38,7 @@ export default function ProjectSwiper({
             <img
               className={css.image}
               src={src}
-              alt={`${projectName} — скриншот ${index + 1}`}
+              alt={`${projectName} — screenshot ${index + 1}`}
               loading={index === 0 ? "eager" : "lazy"}
             />
           </SwiperSlide>

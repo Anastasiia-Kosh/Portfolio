@@ -1,9 +1,7 @@
 export const projects = [
   {
-    id: "recipe-book",
+    id: "recipeBook" as const,
     title: "RecipeBook",
-    description:
-      "RecipeBook - це персональна кулінарна книга, розроблена як особиста колекція рецептів, з можливостями: автентифікація, керування рецептами, додавання до обраного. Реалізовано пошук, фільтрацію, пагінацію й форматований текст рецептів та SEO-оптимізацію.",
     technologies: ["Next.js", "TypeScript", "Node.js", "Express", "MongoDB"],
     githubUrl: "https://github.com/Anastasiia-Kosh/recipe-book",
     backendUrl: "https://github.com/Anastasiia-Kosh/recipe-book-back",
@@ -17,11 +15,15 @@ export const projects = [
     ],
   },
   {
-    id: "harmoniq",
+    id: "harmoniq" as const,
     title: "Harmoniq",
-    description:
-      "Harmoniq - це комплексна платформа для пошуку, читання та публікації статей, яка також забезпечує взаємодію між читачами та авторами контенту. У складі команди розробки я створила сторінку авторів та персональні профілі авторів, реалізувала посторінкове завантаження даних і кешування за допомогою TanStack Query, а також розробила публічний API-ендпоінт для отримання інформації про користувачів із валідацією.",
-    technologies: ["Next.js", "TypeScript", "TanStack Query", "Node.js", "MongoDB"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "TanStack Query",
+      "Node.js",
+      "MongoDB",
+    ],
     githubUrl: "https://github.com/Anastasiia-Kosh/Garmoniq",
     demoUrl: "https://project-webcrafters-03-frontend.vercel.app/",
     screenshots: [
@@ -32,10 +34,8 @@ export const projects = [
     ],
   },
   {
-    id: "petLove",
+    id: "petLove" as const,
     title: "PetLove",
-    description:
-      "PetLove - це адаптивний веб-застосунок, створений для того, щоб допомогти людям знаходити домашніх тварин, переглядати оголошення про їх прилаштування та дізнаватися корисну інформацію про догляд за тваринами. Користувачі можуть переглядати доступних тварин, фільтрувати й сортувати оголошення, зберігати вподобаних улюбленців, переглядати детальну інформацію та керувати власними профілями.",
     technologies: ["Next.js", "TypeScript", "React Redux", "REST API"],
     githubUrl: "https://github.com/Anastasiia-Kosh/PetLove",
     demoUrl: "https://pet-love-steel.vercel.app/",
@@ -49,10 +49,8 @@ export const projects = [
     ],
   },
   {
-    id: "reGarden",
+    id: "reGarden" as const,
     title: "ReGarden",
-    description:
-      "ReGarden Match - адаптивний вебсайт для мобільної гри, яка поєднує механіку Match-3 із відновленням і персоналізацією саду. Сайт знайомить користувачів з ігровим процесом, основними можливостями гри, відгуками та галереєю, а також спрямовує їх на сторінку застосунку в Google Play.",
     technologies: ["HTML5", "CSS3", "JavaScript", "Swiper"],
     githubUrl: "https://github.com/Anastasiia-Kosh/ReGarden",
     demoUrl: "https://anastasiia-kosh.github.io/ReGarden/",
@@ -64,36 +62,32 @@ export const projects = [
       "/images/projects/reGarden/answers.webp",
       "/images/projects/reGarden/gallery.webp",
     ],
-    },
-    {
-    id: "travel-trucks",
+  },
+  {
+    id: "travelTrucks" as const,
     title: "TravelTrucks",
-    description:
-      "TravelTrucks - це веб-застосунок для оренди кемперів, який дозволяє користувачам переглядати доступні кемпери, фільтрувати каталог, ознайомлюватися з детальною інформацією про транспортні засоби та надсилати запити на бронювання.",
     technologies: ["Next.js", "TypeScript", "TanStack Query"],
     githubUrl: "https://github.com/Anastasiia-Kosh/travel-trucks",
     demoUrl: "https://travel-trucks-bice-seven.vercel.app/",
     screenshots: [
-        "/images/projects/travel-trucks/home.webp",
-        "/images/projects/travel-trucks/catalog.webp",
-        "/images/projects/travel-trucks/car.webp",
-        "/images/projects/travel-trucks/rewievs.webp",
+      "/images/projects/travel-trucks/home.webp",
+      "/images/projects/travel-trucks/catalog.webp",
+      "/images/projects/travel-trucks/car.webp",
+      "/images/projects/travel-trucks/rewievs.webp",
     ],
-    },
+  },
   {
-    id: "mebleria",
+    id: "mebleria" as const,
     title: "Mebleria",
-    description:
-      "Mebleria - адаптивний вебсайт меблевого магазину з динамічним каталогом товарів. Користувачі можуть переглядати меблі за категоріями, відкривати детальну інформацію про товар, вибирати колір і оформлювати замовлення.",
     technologies: ["HTML5", "CSS3", "JavaScript", "REST API"],
     githubUrl: "https://github.com/Anastasiia-Kosh/Mebleria",
     demoUrl: "https://anastasiia-kosh.github.io/Mebleria/",
     screenshots: [
-        "/images/projects/mebleria/home.webp",
-        "/images/projects/mebleria/filters.webp",
-        "/images/projects/mebleria/item.webp",
-        "/images/projects/mebleria/popular.webp",
-        "/images/projects/mebleria/answers.webp",
+      "/images/projects/mebleria/home.webp",
+      "/images/projects/mebleria/filters.webp",
+      "/images/projects/mebleria/item.webp",
+      "/images/projects/mebleria/popular.webp",
+      "/images/projects/mebleria/answers.webp",
     ],
   },
-];
+] ;

@@ -1,35 +1,23 @@
+import { useLanguageContext } from "../../hooks/useLanguage";
 import Reveal from "../Reveal/Reveal";
 import css from "./About.module.css";
 
 export default function About() {
+  const { t } = useLanguageContext();
   return (
-      <Reveal>
-    <section className={css.aboutMe} id="about">
-      <div className="container">
-        <p className={css.eyebrow}>ТРОХИ ПРО МЕНЕ</p>
-        <h2 className={css.title}>Від аналітики до розробки</h2>
-        <p className={css.subtitle}>
-          Мій шлях у розробку почався з цікавості до того, як працюють цифрові
-          продукти, і бажання створювати їх самостійно.
-        </p>
+    <Reveal>
+      <section className={css.aboutMe} id="about">
+        <div className="container">
+          <p className={css.eyebrow}>{t.about.eyebrow}</p>
+          <h2 className={css.title}>{t.about.title}</h2>
 
-        <p className={css.subtitle}>
-          Майже 10 років у статистиці й аналітиці навчили мене працювати з
-          даними, помічати закономірності та системно розв’язувати задачі.
-          Згодом я працювала з CRM, API та інтеграціями баз даних, що допомогло
-          мені краще зрозуміти взаємодію між різними системами.
-        </p>
-        <p className={css.subtitle}>
-          Після завершення Fullstack-курсу в GoIT я зосередилася на розробці
-          вебзастосунків. Працюю з React, Next.js, TypeScript і Node.js,
-          розвиваю свої навички через власні та командні проєкти.
-        </p>
-        <p className={css.subtitle}>
-          Мені подобається не просто писати код, а розуміти, як усе працює разом
-          — від інтерфейсу користувача до серверної логіки.
-        </p>
-      </div>
+          {t.about.paragraphs.map((paragraph, index) => (
+            <p className={css.subtitle} key={index}>
+              {paragraph}
+            </p>
+          ))}
+        </div>
       </section>
-      </Reveal>
+    </Reveal>
   );
 }
