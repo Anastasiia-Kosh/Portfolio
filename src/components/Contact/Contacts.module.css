@@ -45,7 +45,9 @@
     transform 300ms ease,
     border-color 300ms ease;
 }
-
+:global([data-theme="light"]) .contactList a {
+  border: 1px solid rgba(89, 79, 105, 0.3);
+}
 .contactList a:hover {
   transform: translateY(-5px);
   border-color: rgb(167 139 250 / 70%);

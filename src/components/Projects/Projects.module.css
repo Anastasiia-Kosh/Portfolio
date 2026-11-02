@@ -40,7 +40,9 @@
 .projectList > * + * {
   border-top: 1px solid rgb(255 255 255 / 15%);
 }
-
+:global([data-theme="light"]) .projectList > * + * {
+  border-top: 1px solid rgba(89, 79, 105, 0.3);
+}
 @media screen and (min-width: 768px) {
   .intro {
     margin-bottom: 80px;

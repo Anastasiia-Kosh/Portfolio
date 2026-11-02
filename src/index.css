@@ -6,7 +6,7 @@
   --color-surface: #10101e;
   --color-text: #f5f3ff;
   --color-text-secondary: #b8b7cc;
-
+  --color-header-footer: #10101e;
   /* Акценти */
   --color-accent: #a78bfa;
   --color-accent-warm: #ff9a6c;
@@ -20,22 +20,7 @@
   --font-sans: "Manrope", sans-serif;
   --font-display: "Space Grotesk", sans-serif;
 }
-[data-theme="light"] {
-  /* Основні кольори */
-  --color-bg: #f7f6fc;
-  --color-surface: #eeecf6;
-  --color-text: #29243a;
-  --color-text-secondary: #706b82;
 
-  /* Акценти */
-  --color-accent: #8063c9;
-  --color-accent-warm: #d98260;
-  --color-glow-violet: #8b5cf6;
-  --color-glow-blue: #38bdf8;
-
-  /* Додаткові поверхні */
-  --color-header-footer: #eae7f2;
-}
 *,
 *::before,
 *::after {
@@ -119,6 +104,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 main {
   flex: 1;
 }
@@ -139,5 +125,39 @@ main {
   .container {
     max-width: 1440px;
     padding: 0 76px;
+  }
+}
+
+/* Styles for LightTheme */
+[data-theme="light"] {
+  color-scheme: light;
+  /* Основні кольори */
+  --color-bg: #fad5c48b;
+  --color-surface: #eae6de;
+  --color-text: #292b35;
+  --color-text-secondary: #716e70;
+  --color-header-footer: #fae7de;
+  /* Акценти */
+  --color-accent: #7560ad;
+  --color-accent-warm: #c77c5c;
+  --color-glow-violet: #8b73c5;
+  --color-glow-blue: #6b9eb5;
+
+  /* Межі та розділювачі */
+  --color-border: rgba(89, 79, 105, 0.2);
+
+  body {
+    background:
+      radial-gradient(
+        ellipse at 10% 85%,
+        rgb(199, 124, 92, 80%),
+        /* rgba(90, 175, 214, 45%), */ transparent 50%
+      ),
+      radial-gradient(
+        ellipse at 80% 35%,
+        rgba(144, 108, 227, 45%),
+        transparent 50%
+      ),
+      var(--color-bg);
   }
 }

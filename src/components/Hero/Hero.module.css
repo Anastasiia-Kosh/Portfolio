@@ -33,7 +33,6 @@
   font-weight: 500;
   letter-spacing: 0.04em;
 }
-
 .descr {
   max-width: 540px;
   margin-bottom: 32px;
@@ -53,10 +52,10 @@
   align-items: center;
   justify-content: center;
   padding: 14px 24px;
-  border: 2px solid var(--color-surface);
+  border: 2px solid var(--color-header-footer);
   border-radius: 10px;
   color: var(--color-text);
-  background-color: var(--color-surface);
+  background-color: var(--color-header-footer);
   font-size: 18px;
   font-weight: 600;
   transition:
@@ -77,13 +76,30 @@
   place-items: center;
   min-width: 0;
 }
-
+.heroImageWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 620px;
+}
 .heroImage {
   display: block;
   width: 100%;
   max-width: 620px;
   height: auto;
   object-fit: contain;
+}
+[data-theme="light"] {
+  .title,
+  .stack,
+  .descr {
+    color: var(--color-surface);
+  }
+  .button:hover,
+  .button:focus-visible {
+    color: var(--color-surface);
+    background-color: transparent;
+    border-color: var(--color-surface);
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -111,6 +127,9 @@
     gap: 48px;
     min-height: 650px;
   }
+  .descr {
+    margin-bottom: 42px;
+  }
   .button {
     gap: 14px;
     max-width: 350px;
@@ -118,5 +137,15 @@
   .icon {
     width: 40px;
     height: 40px;
+  }
+  [data-theme="light"] {
+    .hero {
+      background-image:
+        linear-gradient(rgba(242 151 41/ 0.2)),
+        url("/images/hero/hero-desktop.webp");
+    }
+    .heroImage {
+      filter: sepia(0.5) saturate(1.4) hue-rotate(14deg) brightness(1.15);
+    }
   }
 }

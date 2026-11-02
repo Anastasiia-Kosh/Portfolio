@@ -3,7 +3,7 @@
   padding-top: 24px;
   padding-bottom: 24px;
   font-size: 14px;
-  background-color: var(--color-surface);
+  background-color: var(--color-header-footer);
   color: var(--color-text-secondary);
   border-top: 1px solid rgb(255 255 255 / 20%);
 }
