@@ -93,8 +93,8 @@ button {
 body {
   font-family: var(--font-sans);
   background:
-    radial-gradient(ellipse at 20% 90%, rgb(14 165 233 / 20%), transparent 40%),
-    radial-gradient(ellipse at 80% 20%, rgb(91 33 182 / 35%), transparent 60%),
+    radial-gradient(ellipse at 20% 90%, rgb(14 165 233 / 20%), transparent 50%),
+    radial-gradient(ellipse at 80% 35%, rgb(91 33 182 / 35%), transparent 50%),
     var(--color-bg);
   color: var(--color-text);
   padding: 0;

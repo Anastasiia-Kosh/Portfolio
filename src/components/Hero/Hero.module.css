@@ -1,7 +1,7 @@
 .hero {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: url("/images/hero/hero-mobile.png");
+  background-image: url("/images/hero/hero-mobile.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -89,7 +89,7 @@
   .hero {
     padding-top: 100px;
     min-height: 680px;
-    background-image: url("/images/hero/hero-tablet.png");
+    background-image: url("/images/hero/hero-tablet.webp");
   }
   .heroContent {
     grid-template-columns: 1fr 1fr;
@@ -105,7 +105,7 @@
 @media screen and (min-width: 1440px) {
   .hero {
     min-height: 800px;
-    background-image: url("/images/hero/hero-desktop.png");
+    background-image: url("/images/hero/hero-desktop.webp");
   }
   .heroContent {
     gap: 48px;

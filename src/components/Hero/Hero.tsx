@@ -32,7 +32,7 @@ export default function Hero() {
           <div className={css.heroVisual} aria-hidden="true">
             <img
               className={css.heroImage}
-              src="/images/hero/hero-orb8.png"
+              src="/images/hero/hero-orb.png"
               alt=""
             />
           </div>
