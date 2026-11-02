@@ -76,4 +76,8 @@ export const en = {
     subtitle:
       "Open to new opportunities, exciting projects, and professional connections.",
   },
+  footer: {
+    title: "Portfolio",
+    copyright: "All rights reserved.",
+  },
 };
