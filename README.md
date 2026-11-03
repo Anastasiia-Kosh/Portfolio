@@ -9,7 +9,7 @@ background as a Fullstack Developer.
 
 ## Live Demo
 
-![Portfolio](https://portfolio-mu-khaki-67.vercel.app/)
+[Portfolio](https://portfolio-mu-khaki-67.vercel.app/)
 
 ## About the Project
 
