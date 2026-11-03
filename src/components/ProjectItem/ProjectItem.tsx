@@ -55,10 +55,12 @@ export default function ProjectItem({ project, index }: ProjectItemProps) {
         </div>
 
         <div className={css.preview}>
-          <ProjectSwiper
-            screenshots={project.screenshots}
-            projectName={project.title}
-          />
+          <a href={project.demoUrl} target="_blank" rel="noreferrer">
+            <ProjectSwiper
+              screenshots={project.screenshots}
+              projectName={project.title}
+            />
+          </a>
         </div>
       </article>
     </Reveal>
