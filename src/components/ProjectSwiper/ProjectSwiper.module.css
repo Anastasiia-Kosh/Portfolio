@@ -2,11 +2,11 @@
   position: relative;
   width: 100%;
   overflow: hidden;
-  border: 1px solid rgb(255 255 255 / 10%);
+  border: 1px solid var(--color-border);
   border-radius: 16px;
-  background: #10111a;
+  background: var(--color-border);
   box-shadow:
-    0 0 30px rgb(124 92 255 / 8%),
+    0 0 30px var(--color-border),
     0 20px 60px rgb(0 0 0 / 25%);
 }
 
@@ -23,7 +23,7 @@
 .swiperWrapper :global(.swiper-button-next) {
   width: 36px;
   height: 36px;
-  border: 1px solid rgb(255 255 255 / 20%);
+  border: 1px solid var(--color-border);
   border-radius: 50%;
   background: rgb(12 13 24 / 75%);
   color: #fff;
@@ -35,14 +35,14 @@
 
 .swiperWrapper :global(.swiper-button-prev)::after,
 .swiperWrapper :global(.swiper-button-next)::after {
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 700;
 }
 
 .swiperWrapper :global(.swiper-button-prev):hover,
 .swiperWrapper :global(.swiper-button-next):hover {
   border-color: var(--color-accent);
-  background: rgb(124 92 255 / 85%);
+  background: rgb(91 33 182 / 35%);
 }
 
 /* Індикатори */

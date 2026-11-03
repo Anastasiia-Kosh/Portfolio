@@ -12,10 +12,10 @@
   --color-glow-violet: #8b5cf6;
   --color-glow-blue: #38bdf8;
 
-  --color-border: rgba(190, 176, 255, 20%);
+  --color-border: rgb(255 255 255 / 20%);
 
-  --font-sans: "Manrope", sans-serif;
-  --font-display: "Space Grotesk", sans-serif;
+  --font-sans: 'Manrope', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
 }
 
 *,
@@ -126,13 +126,13 @@ main {
 }
 
 /* Styles for LightTheme */
-[data-theme="light"] {
+[data-theme='light'] {
   color-scheme: light;
 
-  --color-bg: #fad5c48b;
+  --color-bg: rgba(250, 213, 196, 0.545);
   --color-surface: #eae6de;
   --color-text: #292b35;
-  --color-text-secondary: #716e70;
+  --color-text-secondary: #414040;
   --color-header-footer: rgb(208 190 222);
 
   --color-accent: #7560ad;

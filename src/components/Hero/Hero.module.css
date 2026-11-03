@@ -11,7 +11,7 @@
 [data-theme="light"] {
   .hero {
     background-image:
-      linear-gradient(rgba(242 151 41/ 0.2)),
+      linear-gradient(rgba(186 106 235 / 20%)),
       url("/images/hero/hero-mobile.webp");
   }
   .heroImage {
@@ -119,7 +119,7 @@
   [data-theme="light"] {
     .hero {
       background-image:
-        linear-gradient(rgba(242 151 41/ 0.2)),
+        linear-gradient(rgba(186 106 235 / 20%)),
         url("/images/hero/hero-tablet.webp");
     }
   }
@@ -157,7 +157,7 @@
   [data-theme="light"] {
     .hero {
       background-image:
-        linear-gradient(rgba(242 151 41/ 0.2)),
+        linear-gradient(rgba(186 106 235 / 20%)),
         url("/images/hero/hero-desktop.webp");
     }
   }

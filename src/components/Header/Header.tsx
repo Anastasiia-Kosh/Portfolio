@@ -1,13 +1,13 @@
-import { useState } from "react";
-import css from "./Header.module.css";
-import LanguageSwitcher from "../Switcher/LanguageSwitcher";
-import { useLanguageContext } from "../../hooks/useLanguage";
-import ThemeSwitcher from "../Switcher/ThemeSwitcher";
+import { useState } from 'react';
+import css from './Header.module.css';
+import LanguageSwitcher from '../Switcher/LanguageSwitcher';
+import { useLanguageContext } from '../../hooks/useLanguage';
+import ThemeSwitcher from '../Switcher/ThemeSwitcher';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const handleMobileMenu = () => {
-    setIsMobileMenuOpen((prev) => !prev);
+    setIsMobileMenuOpen(prev => !prev);
   };
   const handleCloseMobileMenu = () => {
     setIsMobileMenuOpen(false);
@@ -67,9 +67,9 @@ export default function Header() {
           {isMobileMenuOpen && (
             <div className={css.mobileMenu}>
               <div className={css.mobileButtonsMenu}>
-            <LanguageSwitcher />
-            <ThemeSwitcher />
-          </div>
+                <LanguageSwitcher />
+                <ThemeSwitcher />
+              </div>
               <nav className={css.mobileNav}>
                 <ul className={css.mobileNavigation}>
                   <li className={css.navLink}>
@@ -94,7 +94,6 @@ export default function Header() {
                   </li>
                 </ul>
               </nav>
-                        
             </div>
           )}
         </div>

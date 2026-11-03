@@ -1,12 +1,11 @@
 .projects {
   padding-top: 50px;
   padding-bottom: 50px;
-  border-top: 1px solid rgb(255 255 255 / 20%);
+  border-top: 1px solid var(--color-border);
 }
 
 .intro {
   max-width: 650px;
-  margin-bottom: 50px;
 }
 
 .eyebrow {
@@ -19,7 +18,7 @@
 }
 
 .title {
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-family: var(--font-display);
   font-size: clamp(36px, 5vw, 46px);
   font-weight: 600;
@@ -29,8 +28,9 @@
 
 .description {
   color: var(--color-text-secondary);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.7;
+  margin-bottom: 18px;
 }
 .projectList {
   display: flex;
@@ -38,17 +38,12 @@
 }
 
 .projectList > * + * {
-  border-top: 1px solid rgb(255 255 255 / 15%);
+  border-top: 1px solid var(--color-border);
 }
-:global([data-theme="light"]) .projectList > * + * {
-  border-top: 1px solid rgba(89, 79, 105, 0.3);
-}
-@media screen and (min-width: 768px) {
-  .intro {
-    margin-bottom: 80px;
-  }
 
+@media screen and (min-width: 1440px) {
   .description {
     font-size: 18px;
+    margin-bottom: 30px;
   }
 }

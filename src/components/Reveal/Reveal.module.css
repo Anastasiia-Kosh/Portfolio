@@ -1,9 +1,9 @@
 .reveal {
   opacity: 0;
-  transform: translateY(100px);
+  transform: translateY(60px);
   transition:
-    opacity 1000ms ease,
-    transform 1000ms ease;
+    opacity 900ms ease,
+    transform 900ms ease;
 }
 
 .visible {

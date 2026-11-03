@@ -48,7 +48,9 @@
   z-index: 10;
   overflow-y: auto;
   padding: 24px 20px;
-  background-color: var(--color-surface);
+  background:
+    radial-gradient(ellipse at 80% 30%, rgb(91 33 182 / 35%), transparent 70%),
+    var(--color-header-footer);
   color: var(--color-text);
   border-top: 1px solid var(--color-border);
   display: flex;
@@ -56,7 +58,17 @@
   gap: 44px;
   align-items: center;
 }
-
+[data-theme="light"] {
+  .mobileMenu {
+    background:
+      radial-gradient(
+        ellipse at 80% 30%,
+        rgba(250, 213, 196, 0.545),
+        transparent 70%
+      ),
+      var(--color-header-footer);
+  }
+}
 .mobileNavigation {
   display: flex;
   flex-direction: column;

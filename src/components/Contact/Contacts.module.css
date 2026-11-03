@@ -38,14 +38,14 @@
   flex-direction: column;
   gap: 10px;
   padding: 24px;
-  border: 1px solid rgb(255 255 255 / 15%);
+  border: 1px solid var(--color-border);
   border-radius: 16px;
   text-decoration: none;
   transition:
     transform 300ms ease,
     border-color 300ms ease;
 }
-:global([data-theme="light"]) .contactList a {
+:global([data-theme='light']) .contactList a {
   border: 1px solid rgba(89, 79, 105, 0.3);
 }
 .contactList a:hover {
