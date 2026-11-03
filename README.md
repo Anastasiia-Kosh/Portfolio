@@ -5,11 +5,11 @@ background as a Fullstack Developer.
 
 ## Preview
 
-[Portfolio preview](./src/assets/portfolio-preview.webp)
+![Portfolio preview](./src/assets/portfolio-preview.webp)
 
 ## Live Demo
 
-![Portfolio](https://portfolio-mu-khaki-67.vercel.app/)
+[Portfolio](https://portfolio-mu-khaki-67.vercel.app/)
 
 ## About the Project
 
