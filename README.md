@@ -9,7 +9,7 @@ background as a Fullstack Developer.
 
 ## Live Demo
 
-Link
+![Portfolio](https://portfolio-mu-khaki-67.vercel.app/)
 
 ## About the Project
 
@@ -30,6 +30,16 @@ inspired by cosmic landscapes.
 - **Interactive project galleries** — image sliders powered by Swiper.
 - **Scroll animations** — smooth reveal effects for page sections.
 - **CV download** — direct access to my resume.
+
+## Technologies
+
+- React 19
+- TypeScript
+- Vite
+- React Context API
+- CSS Modules
+- Swiper
+- usehooks-ts
 
 ## Featured Projects
 
