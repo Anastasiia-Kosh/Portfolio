@@ -5,7 +5,7 @@ background as a Fullstack Developer.
 
 ## Preview
 
-![Portfolio preview](./src/assets/portfolio-preview.webp)
+[Portfolio preview](./src/assets/portfolio-preview.webp)
 
 ## Live Demo
 
