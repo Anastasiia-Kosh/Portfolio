@@ -1,5 +1,6 @@
-import { translations } from "../locales";
-import { LanguageContext, type Language } from "./LanguageContext";
+import { useEffect } from 'react';
+import { translations } from '../locales';
+import { LanguageContext, type Language } from './LanguageContext';
 import { useLocalStorage } from 'usehooks-ts';
 
 type Props = {
@@ -7,14 +8,15 @@ type Props = {
 };
 
 export const LanguageProvider = ({ children }: Props) => {
-  const [language, setLanguage] = useLocalStorage<Language>(
-  "language",
-  "uk",
-  );
+  const [language, setLanguage] = useLocalStorage<Language>('language', 'uk');
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
   const t = translations[language];
 
   return (
-    <LanguageContext value={{ language, setLanguage, t}}>
+    <LanguageContext value={{ language, setLanguage, t }}>
       {children}
     </LanguageContext>
   );
